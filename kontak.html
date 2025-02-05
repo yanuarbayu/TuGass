@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - SewaKuy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">SewaKuy</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="produk.html" class="nav-link">Produk</a>
+                <a href="kategori.html" class="nav-link">Kategori</a>
+                <a href="tentang.html" class="nav-link">Tentang Kami</a>
+                <a href="kontak.html" class="nav-link active">Kontak</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Cari barang untuk disewa...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-buttons">
+                <a href="#" class="btn-masuk" id="btnMasuk">Masuk</a>
+                <a href="#" class="btn-daftar" id="btnDaftar">Daftar</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <div class="contact-hero-content">
+                    <h1>Hubungi Kami</h1>
+                    <p>Kami siap membantu Anda dengan segala pertanyaan dan kebutuhan</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <h2>Kirim Pesan</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subjek</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Kirim Pesan</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-container">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Alamat</h3>
+                            <p>Jl. Contoh No. 123</p>
+                            <p>Jakarta Selatan, 12345</p>
+                            <p>Indonesia</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Telepon</h3>
+                            <p>+62 21 1234-5678</p>
+                            <p>+62 812 3456 7890</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>info@sewakuy.com</p>
+                            <p>support@sewakuy.com</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Jam Operasional</h3>
+                            <p>Senin - Jumat: 09:00 - 18:00</p>
+                            <p>Sabtu: 09:00 - 15:00</p>
+                            <p>Minggu: Tutup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-map">
+            <div class="container">
+                <h2>Lokasi Kami</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126926.19443346474!2d106.7891541726563!3d-6.229728100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1644856215000!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-faq">
+            <div class="container">
+                <h2>Pertanyaan Umum</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Bagaimana cara menyewa barang?</h3>
+                        <p>Pilih barang yang ingin disewa, tentukan durasi sewa, lakukan pembayaran, dan barang akan dikirim ke lokasi Anda.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Berapa lama proses pengiriman?</h3>
+                        <p>Pengiriman dilakukan dalam waktu 1-2 hari kerja untuk area Jakarta dan sekitarnya.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Apa syarat untuk menyewa?</h3>
+                        <p>Memiliki KTP, memberikan jaminan, dan melakukan pembayaran di muka sesuai durasi sewa.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Bagaimana jika barang rusak?</h3>
+                        <p>Kerusakan yang disebabkan oleh penyewa akan dikenakan biaya sesuai dengan tingkat kerusakan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Login -->
+    <div id="modalLogin" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Masuk ke SewaKuy</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">Masuk</button>
+                <p class="form-footer">Belum punya akun? <a href="#" id="switchToRegister">Daftar di sini</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Register -->
+    <div id="modalRegister" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Daftar di SewaKuy</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">Daftar</button>
+                <p class="form-footer">Sudah punya akun? <a href="#" id="switchToLogin">Masuk di sini</a></p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang SewaKuy</h3>
+                    <p>Platform penyewaan barang terpercaya dengan berbagai pilihan produk berkualitas untuk kebutuhan Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak Kami</h3>
+                    <p>Email: info@sewakuy.com</p>
+                    <p>Telepon: (021) 1234-5678</p>
+                    <p>Alamat: Jl. Contoh No. 123, Jakarta</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SewaKuy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori - SewaKuy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">SewaKuy</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="produk.html" class="nav-link">Produk</a>
+                <a href="kategori.html" class="nav-link active">Kategori</a>
+                <a href="tentang.html" class="nav-link">Tentang Kami</a>
+                <a href="kontak.html" class="nav-link">Kontak</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Cari barang untuk disewa...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-buttons">
+                <a href="#" class="btn-masuk" id="btnMasuk">Masuk</a>
+                <a href="#" class="btn-daftar" id="btnDaftar">Daftar</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="category-section">
+            <div class="container">
+                <h1>Kategori Produk</h1>
+                <p class="section-description">Temukan berbagai kategori produk yang dapat Anda sewa sesuai kebutuhan</p>
+                
+                <div class="categories-grid">
+                    <div class="category-card" data-category="kamera">
+                        <div class="category-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Kamera</h3>
+                        <p>Kamera DSLR, Mirrorless, dan Action Camera</p>
+                        <div class="category-stats">
+                            <span><i class="fas fa-box"></i> 15 Produk</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <a href="produk.html?category=kamera" class="category-link">Lihat Semua</a>
+                    </div>
+
+                    <div class="category-card" data-category="elektronik">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Elektronik</h3>
+                        <p>Laptop, Proyektor, dan Perangkat Audio</p>
+                        <div class="category-stats">
+                            <span><i class="fas fa-box"></i> 20 Produk</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <a href="produk.html?category=elektronik" class="category-link">Lihat Semua</a>
+                    </div>
+
+                    <div class="category-card" data-category="camping">
+                        <div class="category-icon">
+                            <i class="fas fa-campground"></i>
+                        </div>
+                        <h3>Camping</h3>
+                        <p>Tenda, Sleeping Bag, dan Peralatan Camping</p>
+                        <div class="category-stats">
+                            <span><i class="fas fa-box"></i> 25 Produk</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <a href="produk.html?category=camping" class="category-link">Lihat Semua</a>
+                    </div>
+
+                    <div class="category-card" data-category="olahraga">
+                        <div class="category-icon">
+                            <i class="fas fa-bicycle"></i>
+                        </div>
+                        <h3>Olahraga</h3>
+                        <p>Sepeda, Alat Fitness, dan Perlengkapan Olahraga</p>
+                        <div class="category-stats">
+                            <span><i class="fas fa-box"></i> 18 Produk</span>
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <a href="produk.html?category=olahraga" class="category-link">Lihat Semua</a>
+                    </div>
+                </div>
+
+                <div class="featured-categories">
+                    <h2>Kategori Unggulan</h2>
+                    <div class="featured-grid">
+                        <div class="featured-category" style="background-image: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32')">
+                            <div class="featured-content">
+                                <h3>Kamera Profesional</h3>
+                                <p>Mulai dari Rp 150.000/hari</p>
+                                <a href="produk.html?category=kamera" class="featured-link">Sewa Sekarang</a>
+                            </div>
+                        </div>
+                        <div class="featured-category" style="background-image: url('https://images.unsplash.com/photo-1FhDyEDf2mLo')">
+                            <div class="featured-content">
+                                <h3>Peralatan Camping</h3>
+                                <p>Mulai dari Rp 100.000/hari</p>
+                                <a href="produk.html?category=camping" class="featured-link">Sewa Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Login -->
+    <div id="modalLogin" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Masuk ke SewaKuy</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">Masuk</button>
+                <p class="form-footer">Belum punya akun? <a href="#" id="switchToRegister">Daftar di sini</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Register -->
+    <div id="modalRegister" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Daftar di SewaKuy</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">Daftar</button>
+                <p class="form-footer">Sudah punya akun? <a href="#" id="switchToLogin">Masuk di sini</a></p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang SewaKuy</h3>
+                    <p>Platform penyewaan barang terpercaya dengan berbagai pilihan produk berkualitas untuk kebutuhan Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak Kami</h3>
+                    <p>Email: info@sewakuy.com</p>
+                    <p>Telepon: (021) 1234-5678</p>
+                    <p>Alamat: Jl. Contoh No. 123, Jakarta</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SewaKuy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

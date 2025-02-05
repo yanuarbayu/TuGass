@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - SewaKuy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">SewaKuy</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="produk.html" class="nav-link">Produk</a>
+                <a href="kategori.html" class="nav-link">Kategori</a>
+                <a href="tentang.html" class="nav-link active">Tentang Kami</a>
+                <a href="kontak.html" class="nav-link">Kontak</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Cari barang untuk disewa...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-buttons">
+                <a href="#" class="btn-masuk" id="btnMasuk">Masuk</a>
+                <a href="#" class="btn-daftar" id="btnDaftar">Daftar</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero-content">
+                    <h1>Tentang SewaKuy</h1>
+                    <p>Platform penyewaan barang terpercaya untuk memenuhi kebutuhan Anda</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-story">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="Tim SewaKuy">
+                    </div>
+                    <div class="story-content">
+                        <h2>Cerita Kami</h2>
+                        <p>SewaKuy didirikan pada tahun 2024 dengan visi untuk memudahkan masyarakat dalam menyewa berbagai barang berkualitas. Kami percaya bahwa tidak semua barang perlu dibeli, beberapa cukup disewa saja sesuai kebutuhan.</p>
+                        <p>Dengan pengalaman tim yang solid dan pemahaman mendalam tentang kebutuhan pelanggan, kami terus berinovasi untuk memberikan layanan terbaik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-values">
+            <div class="container">
+                <h2>Nilai-Nilai Kami</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Kepercayaan</h3>
+                        <p>Kami menjunjung tinggi kepercayaan pelanggan dengan menyediakan barang berkualitas dan layanan yang andal.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Pelayanan Prima</h3>
+                        <p>Kepuasan pelanggan adalah prioritas utama kami dengan memberikan pelayanan yang ramah dan profesional.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Kualitas</h3>
+                        <p>Setiap barang yang kami sewakan melalui proses pemeriksaan ketat untuk menjamin kualitas terbaik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-team">
+            <div class="container">
+                <h2>Tim Kami</h2>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a" alt="CEO">
+                        <h3>Ahmad Rizki</h3>
+                        <p class="position">CEO & Founder</p>
+                        <p class="bio">Memiliki pengalaman lebih dari 10 tahun di bidang teknologi dan e-commerce.</p>
+                    </div>
+                    <div class="team-card">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2" alt="COO">
+                        <h3>Sarah Putri</h3>
+                        <p class="position">Chief Operating Officer</p>
+                        <p class="bio">Ahli dalam operasional bisnis dan pengembangan strategi perusahaan.</p>
+                    </div>
+                    <div class="team-card">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7" alt="CTO">
+                        <h3>Budi Santoso</h3>
+                        <p class="position">Chief Technology Officer</p>
+                        <p class="bio">Berpengalaman dalam pengembangan platform teknologi dan inovasi digital.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>1000+</h3>
+                        <p>Pelanggan Aktif</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Produk Tersedia</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Kota Terjangkau</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>4.8/5</h3>
+                        <p>Rating Pelanggan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Login -->
+    <div id="modalLogin" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Masuk ke SewaKuy</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">Masuk</button>
+                <p class="form-footer">Belum punya akun? <a href="#" id="switchToRegister">Daftar di sini</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Register -->
+    <div id="modalRegister" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Daftar di SewaKuy</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">Daftar</button>
+                <p class="form-footer">Sudah punya akun? <a href="#" id="switchToLogin">Masuk di sini</a></p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang SewaKuy</h3>
+                    <p>Platform penyewaan barang terpercaya dengan berbagai pilihan produk berkualitas untuk kebutuhan Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak Kami</h3>
+                    <p>Email: info@sewakuy.com</p>
+                    <p>Telepon: (021) 1234-5678</p>
+                    <p>Alamat: Jl. Contoh No. 123, Jakarta</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SewaKuy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

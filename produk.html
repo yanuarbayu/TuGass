@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - SewaKuy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">SewaKuy</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="produk.html" class="nav-link active">Produk</a>
+                <a href="kategori.html" class="nav-link">Kategori</a>
+                <a href="tentang.html" class="nav-link">Tentang Kami</a>
+                <a href="kontak.html" class="nav-link">Kontak</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Cari barang untuk disewa...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-buttons">
+                <a href="#" class="btn-masuk" id="btnMasuk">Masuk</a>
+                <a href="#" class="btn-daftar" id="btnDaftar">Daftar</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="product-listing">
+            <div class="container">
+                <h1>Produk Kami</h1>
+                
+                <div class="filter-container">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Semua</button>
+                        <button class="filter-btn" data-filter="kamera">Kamera</button>
+                        <button class="filter-btn" data-filter="elektronik">Elektronik</button>
+                        <button class="filter-btn" data-filter="camping">Camping</button>
+                        <button class="filter-btn" data-filter="olahraga">Olahraga</button>
+                    </div>
+                    <div class="sort-dropdown">
+                        <select id="sortProducts">
+                            <option value="default">Urutkan</option>
+                            <option value="price-low">Harga: Rendah ke Tinggi</option>
+                            <option value="price-high">Harga: Tinggi ke Rendah</option>
+                            <option value="name-asc">Nama: A-Z</option>
+                            <option value="name-desc">Nama: Z-A</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="productsContainer">
+                    <!-- Products will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Login -->
+    <div id="modalLogin" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Masuk ke SewaKuy</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">Masuk</button>
+                <p class="form-footer">Belum punya akun? <a href="#" id="switchToRegister">Daftar di sini</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Register -->
+    <div id="modalRegister" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Daftar di SewaKuy</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">Daftar</button>
+                <p class="form-footer">Sudah punya akun? <a href="#" id="switchToLogin">Masuk di sini</a></p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang SewaKuy</h3>
+                    <p>Platform penyewaan barang terpercaya dengan berbagai pilihan produk berkualitas untuk kebutuhan Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak Kami</h3>
+                    <p>Email: info@sewakuy.com</p>
+                    <p>Telepon: (021) 1234-5678</p>
+                    <p>Alamat: Jl. Contoh No. 123, Jakarta</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SewaKuy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
